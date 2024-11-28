@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ccbf378785.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/5e46cb73fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--------------------------------------------- Home Page------------------------------------------------------------------- -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="Name" link="#"><span class="Ankur">A</span>nkur</h1>
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>Hi, I'm <span id="name">Ankur Bose</span></h1>
+          <h2>
+            I am a
+            <span
+              class="txt-rotate"
+              data-period="1000"
+              data-rotate='[ "Btech Student", "UI/UX Developer", "Graphic Designer" ]'
+            ></span>
+          </h2>
+        </div>
+
+        <img class="header-image" src="images/backgroundImage.png" alt="myimage">
+        <!-- <div class="img">
+          <img src="" alt="" srcset="">
+        </div> -->
+        <button class="glowing-btn" id="download-btn">
+          <span class="glowing-txt"
+            >R<span class="faulty-letter">ES</span>UME</span
+          >
+        </button>
+
+        <!-- Progress Bar to be added later -->
+
+        <!-- <div id="progress-container" class="hidden">
+        <div id="progress-bar"></div>
+      </div> -->
+      </div>
+    </div>
+    <!-------------------------------------------------- Home Page Ends --------------------------------------------------------->
+
+    <!------------------------------ About Section start ---------------------------------------------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/bgPhoto.png" alt="User Profile" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I am Ankur Bose, currently pursuing a Bachelor of Technology in Computer Science and Engineering from <strong>St. Thomas' College of Engineering and Technology</strong>. I completed my schooling at <strong>St. Thomas' Boys' School, Khiddirpore</strong>. I have a keen interest in photography, public speaking, and painting. Alongside my academic pursuits, I actively represent my college in Table Tennis. My perseverance and dedication drive me to excel in both academics and extracurricular activities.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-End Developer</span><br />Building responsive,
+                  user-friendly interfaces with a focus on functionality and
+                  aesthetics.<br />
+                </li>
+                <li>
+                  <span>Machine Learning</span><br />Development of
+                  small-to-medium scale applications, from simple algorithms to
+                  machine learning projects.<br />
+                </li>
+                <li>
+                  <span>Communication</span><br />Winner of extempore events,
+                  active in public speaking throughout school and college.<br />
+                </li>
+                <li>
+                  <span>Graphic Designer</span><br />Worked in Adobe cloud<br />
+                </li>
+              </ul>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Front-End Developer</span><br />Basic Experience with
+                  few Hands on projects<br />
+                </li>
+                <li>
+                  <span>Graphic Designer</span><br />Experience in various
+                  video-making tools and design platforms.<br />
+                </li>
+              </ul>
+            </div>
+
+            <!-- Education Section -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2020</span><br />Completed ICSE with 90.2%<br /></li>
+                <li><span>2022</span><br />Completed ISC with 80%<br /></li>
+                <li>
+                  <span>2022</span><br />Joined Btech in CSE from St Thomas
+                  College of Engineering and Technology<br />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------- About Ends here  -------------------------------------->
+
+    <!-------------------------------- Services Sections starting ---------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development (Frontend)</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+              dolore.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-pen-nib"></i>
+            <h2>Graphic Designer</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+              dolore.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-stack-overflow"></i>
+            <h2>Programming and Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+              dolore.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------------------Section Services ENDS------------------------->
+
+    <!-- -------------------------------Portfolio----------------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <div class="sub-title">My Projects</div>
+        <div class="work-list" id="work-list">
+          <!-- Initial Visible Projects -->
+          <div class="work">
+            <img src="images/work1.png" alt="My work" />
+            <div class="layer">
+              <h3>Social Media</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+                beatae?
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work2.png" alt="My work" />
+            <div class="layer">
+              <h3>Check</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                magni!
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work3.png" alt="My work" />
+            <div class="layer">
+              <h3>Check</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, sint.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+
+          <!-- Initially Hidden Projects -->
+          <!-- <div class="work" data-visible="false">
+            <img src="images/work4.png" alt="My work" />
+            <div class="layer">
+              <h3>Project 4</h3>
+              <p>Project description for project 4.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work" data-visible="false">
+            <img src="images/work5.png" alt="My work" />
+            <div class="layer">
+              <h3>Project 5</h3>
+              <p>Project description for project 5.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work" data-visible="false">
+            <img src="images/work6.png" alt="My work" />
+            <div class="layer">
+              <h3>Project 6</h3>
+              <p>Project description for project 6.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div> -->
+          <!-- More projects can be added here in the same format -->
+        </div>
+        <a href="#" class="btn" id="see-more">See More</a>
+        <a href="#" class="btn" id="show-less" style="display: none"
+          >Show Less</a
+        >
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------Contact Me page---------------------------------------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-phone-slash"></i>+91 74394 02288</p>
+            <p>
+              <i class="fa-solid fa-square-envelope"></i>ankurbose04@gmail.com
+            </p>
+            <div class="social-icons">
+              <a
+                href="https://www.instagram.com/the_star_soul_/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ankur-bose-49a094271"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Ankur-Bose" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                style="resize: none"
+              ></textarea>
+              <button type="submit" class="btn-form btn-4 btn-sep icon-send">
+                Send
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------Contact Section------------------------- -->
+
+    <!-- Copyright -->
+    <footer id="footer">
+      <div class="left">Please drop your reviews</div>
+      <div class="right">Copyright ©ANKUR</div>
+    </footer>
+  </body>
+</html>
+<script src="script.js"></script>
